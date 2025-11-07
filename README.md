@@ -132,8 +132,9 @@ Responde `N` al prompt inicial y completa:
 - **Fecha de fin** (YYYY-MM-DD)  
 - **API**: "yahoo", "stooq" o "avantage" (Alpha Vantage)  
 - **Intervalo**: "1d", "1wk", "1mo", "3mo"  
-- **n_days**, **n_sims**, **inversión**  
-- **Número de activos** y sus **tickers**
+- **n_days**: número de días a simular por trayectoria
+- **n_sims**: número de simulaciones
+- **inversión**: capital inicial (p. ej., `10000`)
 
 ### Entradas que solicitará el programa
 
