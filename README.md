@@ -170,7 +170,7 @@ Luego te pedirá:
 ├── requirements.txt      # Dependencias del proyecto
 └── README.md             # Este archivo
 ```
----
+
 ---
 
 ## ⚠️ Notas importantes
@@ -181,7 +181,6 @@ Luego te pedirá:
 - Las **unidades** por defecto en textos/gráficos se expresan como `$`.  
 - Para **Alpha Vantage**, limita el uso según el plan (número de llamadas por minuto/día).
 
----
 ---
 
 ## 👤 Créditos
