@@ -154,7 +154,8 @@ Luego te pedirá:
    - Recomendación: **Invertir** / **No invertir**
 
 > **Exportación de datos por activo**:  
-> Con `Activo.download_data(url, extension)` puedes guardar `csv` o `excel` (por activo).
+> Con `Activo.download_data(url, extension)` puedes guardar `csv` o `excel` del activo.
+> Con `Cartera.download_data(url, extension)` puedes guardar `csv` o `excel` de la cartera.
 
 ---
 
