@@ -139,9 +139,11 @@ Responde `N` al prompt inicial y completa:
 
 - Fechas: comprobación de formato y que `inicio < fin`
 - API e intervalo válidos (valores aceptados arriba)
-- Valores enteros positivos para `n_days` y `n_sims`
-- **Inversión** > 0
-- `num_activos` > 0
+- Valores enteros positivos para **n_days**, **n_sims** e **inversion**.
+
+Luego te pedirá:
+- **Número de activos** y
+- **Ticker** de cada activo (p. ej. `AAPL`, `MSFT`, `SPY`)
 
 ### Salidas
 
