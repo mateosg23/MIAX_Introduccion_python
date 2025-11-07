@@ -6,7 +6,6 @@
 ## 🧭 Tabla de contenidos
 - [Características](#-características)
 - [Requisitos](#-requisitos)
-- [Instalación](#-instalación)
 - [Configuración (APIs)](#-configuración-apis)
 - [Uso](#-uso)
   - [Ejecución rápida (Automático)](#ejecución-rápida-automático)
