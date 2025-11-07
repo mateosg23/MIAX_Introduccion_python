@@ -15,9 +15,6 @@
   - [Salidas](#salidas)
 - [Estructura del proyecto](#-estructura-del-proyecto)
 - [Notas importantes](#-notas-importantes)
-- [Limitaciones y mejoras sugeridas](#-limitaciones-y-mejoras-sugeridas)
-- [Roadmap / TODO](#-roadmap--todo)
-- [Licencia](#-licencia)
 - [Créditos](#-créditos)
 - [Descargo de responsabilidad](#-descargo-de-responsabilidad)
 
