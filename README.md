@@ -2,7 +2,6 @@
 # Simulador de Monte Carlo de Cartera Financiera
 
 > **Análisis y simulación de carteras con descargas automáticas de precios (Yahoo, Stooq, Alpha Vantage), generación de trayectorias vía Monte Carlo y reportes gráficos y en texto.**  
-> **Tecnología**: 100% **Python**.
 
 ## 🧭 Tabla de contenidos
 - [Características](#-características)
