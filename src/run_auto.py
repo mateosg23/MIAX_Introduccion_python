@@ -28,7 +28,7 @@ def run_auto():
             raise ValueError('El número de días de cada simulación debe ser un número entero mayor que cero.') from ve
     
     try:
-        n_sims = int(input('Introduce el número de días a simular: '))
+        n_sims = int(input('Introduce el número simulaciones: '))
     except ValueError as ve:
         raise ValueError('Introduce un número entero positivo') from ve
 
@@ -39,7 +39,7 @@ def run_auto():
             raise ValueError('El número de simulaciones de cada simulación debe ser un número entero mayor que cero.') from ve
     
     try:
-        inversion = int(input('Introduce el número de días a simular: '))
+        inversion = int(input('Introduce la cantidad a invertir: '))
     except ValueError as ve:
         raise ValueError('Introduce una cantidad para invertir mayor que cero') from ve
 
