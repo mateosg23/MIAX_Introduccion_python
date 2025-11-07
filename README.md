@@ -12,8 +12,8 @@
   - [Ejecución manual](#ejecución-manual)
   - [Entradas que solicitará el programa](#entradas-que-solicitará-el-programa)
   - [Salidas](#salidas)
-- [Estructura del proyecto](#-estructura-del-proyecto)
-- [Notas importantes](#-notas-importantes)
+- [Estructura del proyecto]
+- [Notas importantes]
 - [Créditos](#-créditos)
 - [Descargo de responsabilidad](#-descargo-de-responsabilidad)
 
