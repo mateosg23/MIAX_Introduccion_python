@@ -132,6 +132,22 @@ class Cartera:
         media = df.mean()
         cov = df.cov()
         return media, cov
+
+    def download_data(self, url, extension):
+        """
+        Método que permite descargar los datos de la cartera en formato excel o csv
+        """
+        # Función para descargar los datos en csv o excel
+        if not os.path.exists(url):
+            os.makedirs(url)
+        if not url.endswith('/'):
+            url += '/'
+        if extension.lower() == 'csv':
+            self.rellenar_dataset().to_csv(os.path.join(str(url), 'data.csv'))
+        elif extension.lower() == 'excel':
+            self.rellenar_dataset().to_excel(os.path.join(str(url), 'data.xlsx'))
+        else:
+            raise ValueError('No existe un archivo que soporte la extensión introducida')
     
     def monte_carlo(self):
         
