@@ -168,7 +168,7 @@ Luego te pedirá:
 ├── cartera.py            # Clase Cartera: integración, MC, plots y report
 ├── activo.py             # Clase Activo: descargas, limpieza, métricas
 ├── requirements.txt      # Dependencias del proyecto
-└── README.md             # Este archivo
+└── README.md             
 ```
 
 ---
