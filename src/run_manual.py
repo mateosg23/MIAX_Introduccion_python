@@ -18,7 +18,7 @@ def run():
     # La comprobación de fecha_inicio<fecha_fin se hace en la clase
     try: 
         fecha_inicio = pd.to_datetime(input('Introduce la fecha de inicio (YYYY-MM-DD): ')).date()
-        fecha_fin = pd.to_datetime(input('Introduce la fecha de inicio (YYYY-MM-DD): ')).date()
+        fecha_fin = pd.to_datetime(input('Introduce la fecha fin (YYYY-MM-DD): ')).date()
     except ValueError as ve:
         raise ValueError('Introduce un formato correcto de fechas (YYYY-MM-DD)') from ve
     
