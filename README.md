@@ -47,8 +47,6 @@
   - **Recomendación** (Invertir / No invertir) en función del valor esperado
 - **Exportación** de datos por activo a CSV/Excel
 
-> **Nota**: el proyecto está escrito **íntegramente en Python**.
-
 ---
 
 ## 📦 Requisitos
