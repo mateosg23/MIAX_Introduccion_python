@@ -183,8 +183,6 @@ Luego te pedirá:
 
 ---
 
----
-
 ## 👤 Créditos
 
 - Autor: **Santos Garcia, Mateo**
