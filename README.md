@@ -187,59 +187,11 @@ Luego te pedirá:
 
 ---
 
-## 🧪 Limitaciones y mejoras sugeridas
-
-- **Prompts**:
-  - `run_manual.py`: la segunda fecha solicitada dice “inicio” pero debería ser **“fin”**.
-  - `run_auto.py`: los mensajes de `n_sims` e `inversion` repiten el texto de *“número de días a simular”*.
-- **Selección de precios**: en `Cartera.get_data_pct_change()` se usa `iloc[:, -2]` (penúltima columna).  
-  Es **frágil** si cambia el orden de columnas. Mejor seleccionar por nombre:
-  - `Adj Close` si existe (Yahoo), si no `Close` (Stooq/Alpha Vantage).
-- **Cholesky**: si la **covarianza** no es **definida positiva**, `np.linalg.cholesky` fallará.  
-  Sugerencia: **regularización** `cov += λ * I` con `λ` pequeño (p. ej. `1e-6`).
-- **Media de retornos en MC**:  
-  `np.full(..., fill_value=media)` no admite arrays como `fill_value`.  
-  Alternativa robusta:
-  ```python
-  medias = np.tile(media.values.reshape(-1, 1), (1, self.n_days))
-  ```
-- **Pesos**: se generan aleatoriamente 1 sola vez por simulación. Podría:
-  - Permitir pesos fijos definidos por el usuario,
-  - Rebalanceo periódico,
-  - Restricciones (no short, límites máximos).
-- **Alpha Vantage API key**: actualmente embebida en `activo.py`.  
-  Recomiendo **variable de entorno** y no versionar claves.
-- **Exportación**: `download_data()` guarda `data.csv` / `data.xlsx`.  
-  Mejora: incluir el **ticker** en el nombre (`{ticker}_data.csv`).
-- **Unidades**: se mezclan `$` y `€` en etiquetas. Unificar o parametrizar moneda.
-
----
-
-## 🗺️ Roadmap / TODO
-
-- [ ] Parámetro para **moneda** (símbolo y formato)
-- [ ] Selección de columna de precio por **nombre** (no por posición)
-- [ ] Manejo de **covarianza no definida positiva** (regularización)
-- [ ] **Pesos configurables** (fijos / rebalanceo / límites)
-- [ ] Lectura de **API keys** desde variables de entorno
-- [ ] **Pruebas unitarias** y CI
-- [ ] **Dockerfile** / `Makefile`
-- [ ] **Diagrama de flujo** del proceso (p. ej., con FossFLOW)
-- [ ] Ejemplos reproducibles con tickers de demo
-
----
-
-## 📄 Licencia
-
-**Por definir.**  
-Puedes considerar **MIT** para máxima permisividad. Si lo deseas, añado el archivo `LICENSE`.
-
 ---
 
 ## 👤 Créditos
 
 - Autor: **Santos Garcia, Mateo**
-- Colaboración / feedback: bienvenidas PRs y issues.
 
 ---
 
