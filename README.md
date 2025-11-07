@@ -67,8 +67,6 @@ ipython==8.27.0
 scipy==1.14.1
 ```
 
-> Asegúrate de tener conectividad a internet para la descarga de precios.
-
 ---
 
 ## ⚙️ Instalación
