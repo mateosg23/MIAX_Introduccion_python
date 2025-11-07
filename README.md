@@ -97,19 +97,6 @@ pip install -r requirements.txt
 - **Alpha Vantage**: requiere **API key**.  
   En el código actual hay una clave embebida, pero **se recomienda** usar una **variable de entorno**:
 
-```bash
-# Linux/macOS
-export ALPHAVANTAGE_API_KEY="TU_API_KEY"
-# Windows (PowerShell)
-$env:ALPHAVANTAGE_API_KEY="TU_API_KEY"
-```
-
-> Si vas a usar variable de entorno, ajusta `activo.py` para leerla:
-> ```python
-> import os
-> self.api_key = os.getenv("ALPHAVANTAGE_API_KEY", "")
-> ```
-
 ---
 
 ## ▶️ Uso
