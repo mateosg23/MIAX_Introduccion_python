@@ -232,7 +232,7 @@ class Cartera:
         axes[1].plot(np.arange(self.n_days), p50, label="Mediana")
         axes[1].set_title(r"Intervalo de confianza de los precios finales de las simulaciones ($\alpha = 0{,}05$)")
         axes[1].set_xlabel("Días")
-        axes[1].set_ylabel("Valor (€)")
+        axes[1].set_ylabel("Valor ($)")
         plt.tight_layout()
         plt.show()
         
